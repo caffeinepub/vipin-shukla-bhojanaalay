@@ -39,67 +39,65 @@ interface CartItem {
 const MENU_ITEMS: MenuItem[] = [
   {
     id: 1,
-    name: "\u0915\u094d\u0930\u093f\u0938\u094d\u092a\u0940 \u0938\u092e\u094b\u0938\u093e",
+    name: "क्रिस्पी समोसा",
     price: 18,
     stock: 25,
     image:
-      "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80",
-    desc: "\u0917\u0930\u092e\u093e\u0917\u0930\u092e, \u0915\u0941\u0930\u0915\u0941\u0930\u093e \u0938\u092e\u094b\u0938\u093e - \u0939\u0930\u0940 \u091a\u091f\u0928\u0940 \u0915\u0947 \u0938\u093e\u0925\u0964",
+      "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&h=300&q=80",
+    desc: "गरमागरम, कुरकुरा समोसा - हरी चटनी के साथ।",
   },
   {
     id: 2,
-    name: "\u0926\u0947\u0938\u0940 \u0918\u0940 \u091c\u0932\u0947\u092c\u0940",
+    name: "देसी घी जलेबी",
     price: 130,
     stock: 15,
     image:
-      "https://images.unsplash.com/photo-1606312619072-d5b539877e9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80",
-    desc: "\u0915\u0947\u0938\u0930\u093f\u092f\u093e, \u0915\u0941\u0930\u0915\u0941\u0930\u0940 \u091c\u0932\u0947\u092c\u0940 - \u0926\u0947\u0938\u0940 \u0918\u0940 \u092e\u0947\u0902 \u0924\u0932\u0940 (250 \u0917\u094d\u0930\u093e\u092e)\u0964",
+      "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=400&h=300&q=80",
+    desc: "केसरिया, कुरकुरी जलेबी - देसी घी में तली (250 ग्राम)।",
   },
   {
     id: 3,
-    name: "\u0935\u093f\u0936\u0947\u0937 \u0935\u0947\u091c \u0925\u093e\u0932\u0940",
+    name: "विशेष वेज थाली",
     price: 140,
     stock: 12,
     image:
-      "https://images.unsplash.com/photo-1546833998-877b37c2e5c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80",
-    desc: "2 \u0930\u094b\u091f\u0940, \u0938\u092c\u094d\u091c\u093c\u0940, \u0926\u093e\u0932 \u092e\u0916\u0928\u0940, \u091a\u093e\u0935\u0932, \u0938\u0932\u093e\u0926, \u092a\u093e\u092a\u0921\u093c, \u0905\u091a\u093e\u0930\u0964",
+      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=400&h=300&q=80",
+    desc: "2 रोटी, सब्ज़ी, दाल मखनी, चावल, सलाद, पापड़, अचार।",
   },
   {
     id: 4,
-    name: "\u091b\u094b\u0932\u0947 \u092d\u091f\u0942\u0930\u0947",
+    name: "छोले भटूरे",
     price: 100,
     stock: 10,
     image:
-      "https://images.unsplash.com/photo-1626132647523-66bc03b5e3a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80",
-    desc: "\u0926\u094b \u0928\u0930\u092e \u092d\u091f\u0942\u0930\u0947, \u092e\u0938\u093e\u0932\u0947\u0926\u093e\u0930 \u091b\u094b\u0932\u0947, \u092a\u094d\u092f\u093e\u091c-\u0928\u0940\u0902\u092c\u0942 \u0915\u0947 \u0938\u093e\u0925\u0964",
+      "https://images.unsplash.com/photo-1626132647523-66bc03b5e3a7?auto=format&fit=crop&w=400&h=300&q=80",
+    desc: "दो नरम भटूरे, मसालेदार छोले, प्याज-नींबू के साथ।",
   },
   {
     id: 5,
-    name: "\u0924\u0902\u0926\u0942\u0930\u0940 \u0930\u094b\u091f\u0940",
+    name: "तंदूरी रोटी",
     price: 12,
     stock: 50,
     image:
-      "https://images.unsplash.com/photo-1604909052743-94e838986d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200&q=80",
-    desc: "\u0924\u0902\u0926\u0942\u0930 \u092e\u0947\u0902 \u0938\u0947\u0902\u0915\u0940 \u0939\u0941\u0908 \u0917\u0947\u0939\u0942\u0902 \u0915\u0940 \u0930\u094b\u091f\u0940 - \u092e\u0915\u094d\u0916\u0928 \u0932\u0917\u093e \u0939\u0941\u0906\u0964",
+      "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=400&h=300&q=80",
+    desc: "तंदूर में सेंकी हुई गेहूं की रोटी - मक्खन लगा हुआ।",
   },
 ];
 
 const FEATURES = [
-  "\u0936\u0941\u0926\u094d\u0927 \u0936\u093e\u0915\u093e\u0939\u093e\u0930\u0940 (\u0915\u094b\u0908 \u0905\u0902\u0921\u093e \u0928\u0939\u0940\u0902)",
-  "\u0926\u0947\u0938\u0940 \u0918\u0940 \u0915\u093e \u0939\u0940 \u092a\u094d\u0930\u092f\u094b\u0917",
-  "\u0939\u094b\u092e \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u0947\u0935\u0932 5 \u0915\u093f\u092e\u0940 \u0926\u093e\u092f\u0930\u0947 \u092e\u0947\u0902 (\u0928\u094d\u092f\u0942\u0928\u0924\u092e \u0911\u0930\u094d\u0921\u0930 \u20b950)",
+  "शुद्ध शाकाहारी (कोई अंडा नहीं)",
+  "देसी घी का ही प्रयोग",
+  "होम डिलीवरी केवल 5 किमी दायरे में (न्यूनतम ऑर्डर ₹50)",
 ];
 
 const TESTIMONIALS = [
   {
-    text: "\u0938\u092e\u094b\u0938\u093e \u092c\u093f\u0932\u094d\u0915\u0941\u0932 \u0935\u0948\u0938\u093e \u0939\u0940 \u0915\u0941\u0930\u0915\u0941\u0930\u093e \u091c\u0948\u0938\u093e \u092c\u091a\u092a\u0928 \u092e\u0947\u0902 \u0916\u093e\u092f\u093e \u0925\u093e\u0964 \u091c\u0932\u0947\u092c\u0940 \u0917\u0930\u092e\u093e\u0917\u0930\u092e \u0914\u0930 \u0930\u0938\u092d\u0930\u0940\u0964 \u092c\u0939\u0941\u0924 \u092c\u0922\u093c\u093f\u092f\u093e!",
-    author:
-      "\u0930\u093e\u0939\u0941\u0932 \u092e\u093f\u0936\u094d\u0930\u093e, \u0928\u0948\u0928\u0940",
+    text: "समोसा बिल्कुल वैसा ही कुरकुरा जैसा बचपन में खाया था। जलेबी गरमागरम और रसभरी। बहुत बढ़िया!",
+    author: "राहुल मिश्रा, नैनी",
   },
   {
-    text: "\u0925\u093e\u0932\u0940 \u092e\u0947\u0902 \u0926\u093e\u0932 \u092e\u0916\u0928\u0940 \u0915\u093e \u0938\u094d\u0935\u093e\u0926 \u0932\u093e\u091c\u0935\u093e\u092c\u0964 \u0918\u0930 \u0915\u093e \u0916\u093e\u0928\u093e \u092f\u093e\u0926 \u0906 \u0917\u092f\u093e\u0964 \u0938\u093e\u092b\u093c-\u0938\u092b\u093c\u093e\u0908 \u092d\u0940 \u0936\u093e\u0928\u0926\u093e\u0930\u0964",
-    author:
-      "\u092a\u094d\u0930\u0940\u0924\u093f \u0938\u093f\u0902\u0939, \u0905\u0921\u093e \u092e\u094b\u0921\u093c",
+    text: "थाली में दाल मखनी का स्वाद लाजवाब। घर का खाना याद आ गया। साफ़-सफ़ाई भी शानदार।",
+    author: "प्रीति सिंह, अडा मोड़",
   },
 ];
 
@@ -149,7 +147,13 @@ function MenuCard({
     setTimeout(() => setAdded(false), 1200);
   }
 
-  const btnClass = `w-full py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 hindi-text ${inStock ? (added ? "bg-emerald-500 text-white" : "bg-secondary text-white hover:bg-secondary/90 hover:scale-[1.02]") : "bg-muted text-muted-foreground cursor-not-allowed"}`;
+  const btnClass = `w-full py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
+    inStock
+      ? added
+        ? "bg-emerald-500 text-white"
+        : "bg-primary text-white hover:bg-primary/90 hover:scale-[1.02]"
+      : "bg-muted text-muted-foreground cursor-not-allowed"
+  }`;
 
   return (
     <motion.div
@@ -175,11 +179,11 @@ function MenuCard({
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         {inStock ? (
           <span className="absolute top-2 right-2 bg-emerald-100 text-emerald-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-emerald-200">
-            📦 \u0938\u094d\u091f\u0949\u0915: {available} \u092c\u091a\u0947
+            📦 Stock: {available} left
           </span>
         ) : (
           <span className="absolute top-2 right-2 bg-red-100 text-red-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-red-200">
-            \u0906\u0909\u091f \u0911\u092b \u0938\u094d\u091f\u0949\u0915
+            Out of Stock
           </span>
         )}
       </div>
@@ -192,9 +196,9 @@ function MenuCard({
           {item.desc}
         </p>
         <p className="text-primary font-bold text-2xl mb-3 font-display">
-          \u20b9{item.price}{" "}
-          <span className="text-sm font-normal text-muted-foreground hindi-text">
-            \u092a\u094d\u0930\u0924\u093f \u092a\u094d\u0932\u0947\u091f
+          ₹{item.price}{" "}
+          <span className="text-sm font-normal text-muted-foreground">
+            per plate
           </span>
         </p>
         <button
@@ -207,19 +211,15 @@ function MenuCard({
           {added ? (
             <>
               <CheckCircle className="w-4 h-4" />
-              \u091c\u0941\u0921\u093c \u0917\u092f\u093e
+              Added!
             </>
           ) : inStock ? (
             <>
               <ShoppingCart className="w-4 h-4" />
-              \u0915\u093e\u0930\u094d\u091f \u092e\u0947\u0902
-              \u091c\u094b\u0921\u093c\u0947\u0902
+              Add to Cart
             </>
           ) : (
-            <>
-              \u274c \u0906\u0909\u091f \u0911\u092b
-              \u0938\u094d\u091f\u0949\u0915
-            </>
+            <>❌ Out of Stock</>
           )}
         </button>
       </div>
@@ -250,9 +250,7 @@ export default function App() {
       const menuItem = MENU_ITEMS.find((m) => m.id === item.id)!;
       const currentQty = existing ? existing.quantity : 0;
       if (currentQty + 1 > menuItem.stock) {
-        alert(
-          `\u26a0\ufe0f \u0915\u0947\u0935\u0932 ${menuItem.stock} ${menuItem.name} \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0902\u0964`,
-        );
+        alert(`⚠️ Only ${menuItem.stock} ${menuItem.name} available.`);
         return prev;
       }
       if (existing) {
@@ -274,9 +272,7 @@ export default function App() {
       const menuItem = MENU_ITEMS.find((m) => m.id === id)!;
       const newQty = item.quantity + delta;
       if (newQty > menuItem.stock) {
-        alert(
-          `\u26a0\ufe0f \u0915\u0947\u0935\u0932 ${menuItem.stock} ${menuItem.name} \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0902\u0964`,
-        );
+        alert(`⚠️ Only ${menuItem.stock} ${menuItem.name} available.`);
         return prev;
       }
       if (newQty <= 0) {
@@ -287,58 +283,39 @@ export default function App() {
   }, []);
 
   const removeItem = useCallback((id: number) => {
-    if (
-      confirm(
-        "\u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938 \u0906\u0907\u091f\u092e \u0915\u094b \u0915\u093e\u0930\u094d\u091f \u0938\u0947 \u0939\u091f\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",
-      )
-    ) {
+    if (confirm("Remove this item from cart?")) {
       setCart((prev) => prev.filter((c) => c.id !== id));
     }
   }, []);
 
   const clearCart = useCallback(() => {
     if (cart.length === 0) return;
-    if (
-      confirm(
-        "\u0915\u094d\u092f\u093e \u0906\u092a \u0905\u092a\u0928\u093e \u0915\u093e\u0930\u094d\u091f \u0916\u093e\u0932\u0940 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",
-      )
-    ) {
+    if (confirm("Clear your cart?")) {
       setCart([]);
     }
   }, [cart.length]);
 
   function orderOnWhatsApp() {
     if (cart.length === 0) {
-      alert(
-        "\u0915\u0943\u092a\u092f\u093e \u092a\u0939\u0932\u0947 \u0915\u093e\u0930\u094d\u091f \u092e\u0947\u0902 \u0915\u0941\u091b \u0906\u0907\u091f\u092e \u0910\u0921 \u0915\u0930\u0947\u0902\u0964",
-      );
+      alert("Please add items to cart first.");
       return;
     }
-    const name = customerName.trim() || "\u0917\u094d\u0930\u093e\u0939\u0915";
-    const address =
-      customerAddress.trim() ||
-      "\u092a\u0924\u093e \u0928\u0939\u0940\u0902 \u0926\u093f\u092f\u093e";
-    const phone =
-      customerPhone.trim() ||
-      "\u0928\u0939\u0940\u0902 \u0926\u093f\u092f\u093e";
+    const name = customerName.trim() || "ग्राहक";
+    const address = customerAddress.trim() || "पता नहीं दिया";
+    const phone = customerPhone.trim() || "नहीं दिया";
 
-    let msg =
-      "\u0928\u092e\u0938\u094d\u0924\u0947 \u0935\u093f\u092a\u093f\u0928 \u0936\u0941\u0915\u094d\u0932 \u092d\u094b\u091c\u0928\u093e\u0932\u092f (\u0905\u0921\u093e \u092e\u094b\u0921\u093c, \u0928\u0948\u0928\u0940),%0A%0A";
-    msg += `\u092e\u0948\u0902 *${name}* \u0939\u0942\u0901\u0964%0A`;
-    msg += `\u092a\u0924\u093e: ${address}%0A`;
-    msg += `\u092b\u093c\u094b\u0928: ${phone}%0A%0A`;
-    msg +=
-      "\u092e\u0941\u091d\u0947 \u092f\u0947 \u0906\u0907\u091f\u092e \u0911\u0930\u094d\u0921\u0930 \u0915\u0930\u0928\u0947 \u0939\u0948\u0902:%0A%0A";
+    let msg = "नमस्ते विपिन शुक्ल भोजनालय (अडा मोड़, नैनी),%0A%0A";
+    msg += `मैं *${name}* हूँ।%0A`;
+    msg += `पता: ${address}%0A`;
+    msg += `फ़ोन: ${phone}%0A%0A`;
+    msg += "मुझे ये आइटम ऑर्डर करने हैं:%0A%0A";
     for (const item of cart) {
-      msg += `🍽️ ${item.name} - ${item.quantity} \u092a\u094d\u0932\u0947\u091f (\u20b9${item.price * item.quantity})%0A`;
+      msg += `🍽️ ${item.name} - ${item.quantity} प्लेट (₹${item.price * item.quantity})%0A`;
     }
-    msg += `%0A\ud83d\udccb *\u0915\u0941\u0932 \u092c\u093f\u0932: \u20b9${getCartTotal(cart)}*%0A`;
-    msg +=
-      "\ud83d\udccd \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0915\u094d\u0937\u0947\u0924\u094d\u0930: \u0905\u0921\u093e \u092e\u094b\u0921\u093c, \u0928\u0948\u0928\u0940 (5 \u0915\u093f\u092e\u0940 \u0926\u093e\u092f\u0930\u093e)%0A";
-    msg +=
-      "\u23f0 \u0921\u093f\u0932\u0940\u0935\u0930\u0940 \u0938\u092e\u092f: \u0915\u0949\u0932 \u092a\u0930 \u0924\u092f \u0915\u0930\u0947\u0902\u0917\u0947%0A%0A";
-    msg +=
-      "\u0915\u0943\u092a\u092f\u093e \u092e\u0947\u0930\u093e \u0911\u0930\u094d\u0921\u0930 \u0915\u0902\u092b\u0930\u094d\u092e \u0915\u0930\u0947\u0902\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926! \ud83d\ude4f";
+    msg += `%0A📋 *कुल बिल: ₹${getCartTotal(cart)}*%0A`;
+    msg += "📍 डिलीवरी क्षेत्र: अडा मोड़, नैनी (5 किमी दायरा)%0A";
+    msg += "⏰ डिलीवरी समय: कॉल पर तय करेंगे%0A%0A";
+    msg += "कृपया मेरा ऑर्डर कंफर्म करें। धन्यवाद! 🙏";
 
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
   }
@@ -347,18 +324,15 @@ export default function App() {
   const cartTotal = getCartTotal(cart);
 
   const navLinks = [
-    { href: "#menu", label: "\u092e\u0947\u0928\u0942" },
-    {
-      href: "#about",
-      label: "\u0939\u092e\u093e\u0930\u093e \u092a\u0930\u093f\u091a\u092f",
-    },
-    { href: "#order", label: "\u0911\u0930\u094d\u0921\u0930" },
-    { href: "#contact", label: "\u0938\u0902\u092a\u0930\u094d\u0915" },
+    { href: "#menu", label: "Menu" },
+    { href: "#about", label: "About Us" },
+    { href: "#order", label: "Order" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
     <div className="min-h-screen bg-background">
-      {/* \u2500\u2500\u2500 STICKY HEADER \u2500\u2500\u2500 */}
+      {/* ─── STICKY HEADER ─── */}
       <header
         className="sticky top-0 z-50 shadow-header"
         style={{ background: "oklch(0.42 0.22 28)" }}
@@ -367,8 +341,7 @@ export default function App() {
           <div className="flex items-center gap-2">
             <Utensils className="w-6 h-6 text-secondary" />
             <span className="font-display text-white text-lg md:text-xl font-bold hindi-text leading-tight">
-              \u0935\u093f\u092a\u093f\u0928 \u0936\u0941\u0915\u094d\u0932
-              \u092d\u094b\u091c\u0928\u093e\u0932\u092f
+              विपिन शुक्ल भोजनालय
             </span>
           </div>
 
@@ -378,7 +351,7 @@ export default function App() {
                 key={link.href}
                 href={link.href}
                 data-ocid="header.link"
-                className="text-white/90 hover:text-secondary font-semibold text-sm hindi-text transition-colors"
+                className="text-white/90 hover:text-secondary font-semibold text-sm transition-colors"
               >
                 {link.label}
               </a>
@@ -391,9 +364,7 @@ export default function App() {
               className="relative flex items-center gap-1.5 bg-secondary text-white px-3 py-1.5 rounded-full text-sm font-semibold hover:bg-secondary/90 transition-colors"
             >
               <ShoppingCart className="w-4 h-4" />
-              <span className="hidden sm:inline hindi-text">
-                \u0915\u093e\u0930\u094d\u091f
-              </span>
+              <span className="hidden sm:inline">Cart</span>
               {cartCount > 0 && (
                 <span className="bg-white text-primary rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">
                   {cartCount}
@@ -430,7 +401,7 @@ export default function App() {
                     href={link.href}
                     data-ocid="header.link"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-white/90 hindi-text font-semibold text-base py-1"
+                    className="text-white/90 font-semibold text-base py-1"
                   >
                     {link.label}
                   </a>
@@ -441,7 +412,7 @@ export default function App() {
         </AnimatePresence>
       </header>
 
-      {/* \u2500\u2500\u2500 HERO \u2500\u2500\u2500 */}
+      {/* ─── HERO ─── */}
       <section
         className="relative min-h-[520px] flex items-center justify-center text-center px-4 py-24"
         style={{
@@ -458,34 +429,24 @@ export default function App() {
             className="font-display text-4xl md:text-6xl font-bold text-white mb-4 hindi-text"
             style={{ textShadow: "3px 3px 6px rgba(0,0,0,0.6)" }}
           >
-            \u0938\u094d\u0935\u093e\u0926 \u091c\u094b
-            \u0926\u0940\u0935\u093e\u0928\u093e \u092c\u0928\u093e
-            \u0926\u0947!
+            स्वाद जो दीवाना बना दे!
           </h1>
           <p className="text-white/90 text-lg md:text-xl hindi-text mb-2">
-            \u0917\u0930\u092e\u093e\u0917\u0930\u092e
-            \u0938\u092e\u094b\u0938\u093e \u2022 \u0930\u0938\u092d\u0930\u0940
-            \u091c\u0932\u0947\u092c\u0940 \u2022
-            \u092a\u093e\u0930\u0902\u092a\u0930\u093f\u0915
-            \u0925\u093e\u0932\u0940 \u2022 \u091b\u094b\u0932\u0947
-            \u092d\u091f\u0942\u0930\u0947
+            गरमागरम समोसा • रसभरी जलेबी • पारंपरिक थाली • छोले भटूरे
           </p>
           <p className="text-white/80 text-base hindi-text mb-8">
-            🥘 \u0924\u093e\u091c\u093c\u093e \u0914\u0930
-            \u0936\u0941\u0926\u094d\u0927
-            \u0938\u093e\u092e\u0917\u094d\u0930\u0940 \u0938\u0947
-            \u0924\u0948\u092f\u093e\u0930
+            🥘 ताज़ा और शुद्ध सामग्री से तैयार
           </p>
           <a
             href="#menu"
-            className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-3 rounded-full text-base hover:bg-primary/90 transition-all hover:-translate-y-0.5 hindi-text shadow-lg"
+            className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-3 rounded-full text-base hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-lg"
           >
-            \u092e\u0947\u0928\u0942 \u0926\u0947\u0916\u0947\u0902
+            View Menu
           </a>
         </motion.div>
       </section>
 
-      {/* \u2500\u2500\u2500 MENU \u2500\u2500\u2500 */}
+      {/* ─── MENU ─── */}
       <section id="menu" data-ocid="menu.section" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -495,9 +456,8 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary hindi-text mb-3">
-              \ud83e\udd57 \u0939\u092e\u093e\u0930\u093e
-              \u092e\u0947\u0928\u0942
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-3">
+              🥗 Our Menu
             </h2>
             <div className="w-24 h-1.5 bg-secondary rounded-full mx-auto" />
           </motion.div>
@@ -516,7 +476,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* \u2500\u2500\u2500 ABOUT \u2500\u2500\u2500 */}
+      {/* ─── ABOUT ─── */}
       <section
         id="about"
         className="py-16 px-4"
@@ -529,8 +489,8 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-10"
           >
-            <h2 className="font-display text-4xl font-bold text-primary hindi-text mb-3">
-              \u0939\u092e\u093e\u0930\u0940 \u0915\u0939\u093e\u0928\u0940
+            <h2 className="font-display text-4xl font-bold text-primary mb-3">
+              Our Story
             </h2>
             <div className="w-24 h-1.5 bg-secondary rounded-full mx-auto" />
           </motion.div>
@@ -545,7 +505,7 @@ export default function App() {
             >
               <img
                 src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                alt="\u092d\u094b\u091c\u0928\u093e\u0932\u092f"
+                alt="भोजनालय"
                 className="w-full rounded-3xl object-cover shadow-lg"
                 style={{ maxHeight: 320 }}
               />
@@ -559,28 +519,9 @@ export default function App() {
               className="md:w-3/5 space-y-3"
             >
               <p className="text-foreground text-base leading-relaxed hindi-text">
-                <strong>
-                  \u0935\u093f\u092a\u093f\u0928 \u0936\u0941\u0915\u094d\u0932
-                  \u092d\u094b\u091c\u0928\u093e\u0932\u092f
-                </strong>{" "}
-                \u0905\u0921\u093e \u092e\u094b\u0921\u093c,
-                \u0928\u0948\u0928\u0940,
-                \u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c
-                \u092e\u0947\u0902 20 \u0935\u0930\u094d\u0937\u094b\u0902
-                \u0938\u0947 \u0936\u0941\u0926\u094d\u0927
-                \u0936\u093e\u0915\u093e\u0939\u093e\u0930\u0940
-                \u092d\u094b\u091c\u0928 \u092a\u0930\u094b\u0938
-                \u0930\u0939\u093e \u0939\u0948\u0964
-                \u0939\u092e\u093e\u0930\u0940
-                \u0935\u093f\u0936\u0947\u0937\u0924\u093e \u0939\u0948 \u2013
-                \u0924\u093e\u091c\u0917\u0940,
-                \u0938\u093e\u092b-\u0938\u092b\u093e\u0908 \u0914\u0930
-                \u092a\u093e\u0930\u0902\u092a\u0930\u093f\u0915
-                \u0938\u094d\u0935\u093e\u0926\u0964 \u092f\u0939\u093e\u0901
-                \u0915\u093e \u0938\u092e\u094b\u0938\u093e \u0914\u0930
-                \u091c\u0932\u0947\u092c\u0940 \u0924\u094b
-                \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092e\u0947\u0902
-                \u092e\u0936\u0939\u0942\u0930 \u0939\u0948\u0964
+                <strong>विपिन शुक्ल भोजनालय</strong> अडा मोड़, नैनी, प्रयागराज में 20
+                वर्षों से शुद्ध शाकाहारी भोजन परोस रहा है। हमारी विशेषता है – ताजगी,
+                साफ-सफाई और पारंपरिक स्वाद। यहाँ का समोसा और जलेबी तो क्षेत्र में मशहूर है।
               </p>
               <ul className="space-y-2">
                 {FEATURES.map((feat) => (
@@ -596,10 +537,7 @@ export default function App() {
               <div className="flex items-start gap-2 text-sm text-foreground hindi-text">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>\u092a\u0924\u093e:</strong> \u0905\u0921\u093e
-                  \u092e\u094b\u0921\u093c, \u0928\u0948\u0928\u0940,
-                  \u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c -
-                  211008
+                  <strong>Address:</strong> अडा मोड़, नैनी, प्रयागराज - 211008
                 </span>
               </div>
             </motion.div>
@@ -607,7 +545,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* \u2500\u2500\u2500 TESTIMONIALS \u2500\u2500\u2500 */}
+      {/* ─── TESTIMONIALS ─── */}
       <section
         className="py-16 px-4"
         style={{ background: "oklch(0.93 0.025 75)" }}
@@ -619,9 +557,8 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-10"
           >
-            <h2 className="font-display text-4xl font-bold text-primary hindi-text mb-3">
-              \u0917\u094d\u0930\u093e\u0939\u0915\u094b\u0902 \u0915\u0940
-              \u0930\u093e\u092f
+            <h2 className="font-display text-4xl font-bold text-primary mb-3">
+              Customer Reviews
             </h2>
             <div className="w-24 h-1.5 bg-secondary rounded-full mx-auto" />
           </motion.div>
@@ -641,7 +578,7 @@ export default function App() {
                   {t.text}
                 </p>
                 <p className="font-semibold text-primary hindi-text text-sm">
-                  \u2014 {t.author}
+                  — {t.author}
                 </p>
               </motion.div>
             ))}
@@ -649,7 +586,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* \u2500\u2500\u2500 CART & ORDER \u2500\u2500\u2500 */}
+      {/* ─── CART & ORDER ─── */}
       <section id="order" data-ocid="cart.section" className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <motion.div
@@ -659,9 +596,9 @@ export default function App() {
             className="bg-card rounded-3xl p-6 md:p-10 shadow-card"
             style={{ border: "1px solid oklch(0.88 0.04 72)" }}
           >
-            <h2 className="font-display text-3xl font-bold text-primary hindi-text flex items-center gap-3 mb-6">
+            <h2 className="font-display text-3xl font-bold text-primary flex items-center gap-3 mb-6">
               <ShoppingCart className="w-7 h-7" />
-              \u0906\u092a\u0915\u093e \u0915\u093e\u0930\u094d\u091f
+              Your Cart
             </h2>
 
             {cart.length === 0 ? (
@@ -669,13 +606,7 @@ export default function App() {
                 data-ocid="cart.empty_state"
                 className="text-center py-10 text-muted-foreground hindi-text"
               >
-                \ud83d\uded2 \u0906\u092a\u0915\u093e
-                \u0915\u093e\u0930\u094d\u091f \u0916\u093e\u0932\u0940
-                \u0939\u0948\u0964 \u0915\u0943\u092a\u092f\u093e
-                \u090a\u092a\u0930 \u092e\u0947\u0928\u0942 \u0938\u0947
-                \u0915\u0941\u091b
-                \u0938\u094d\u0935\u093e\u0926\u093f\u0937\u094d\u091f
-                \u0921\u093f\u0936 \u0910\u0921 \u0915\u0930\u0947\u0902!
+                🛒 आपका कार्ट खाली है। कृपया ऊपर मेनू से कुछ स्वादिष्ट डिश ऐड करें!
               </div>
             ) : (
               <ul className="divide-y divide-border mb-4">
@@ -694,11 +625,11 @@ export default function App() {
                         <span className="font-semibold text-foreground hindi-text">
                           {item.name}
                         </span>
-                        <span className="text-muted-foreground text-sm ml-2 hindi-text">
-                          (\u20b9{item.price} \u00d7 {item.quantity})
+                        <span className="text-muted-foreground text-sm ml-2">
+                          (₹{item.price} × {item.quantity})
                         </span>
                         <span className="text-primary font-bold ml-2">
-                          = \u20b9{item.price * item.quantity}
+                          = ₹{item.price * item.quantity}
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -706,7 +637,7 @@ export default function App() {
                           type="button"
                           onClick={() => updateQuantity(item.id, -1)}
                           className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-secondary/80 transition-colors"
-                          aria-label="\u0918\u091f\u093e\u090f\u0902"
+                          aria-label="Decrease"
                         >
                           <Minus className="w-3.5 h-3.5" />
                         </button>
@@ -717,18 +648,19 @@ export default function App() {
                           type="button"
                           onClick={() => updateQuantity(item.id, 1)}
                           className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-secondary/80 transition-colors"
-                          aria-label="\u092c\u0922\u093c\u093e\u090f\u0902"
+                          aria-label="Increase"
                         >
                           <Plus className="w-3.5 h-3.5" />
                         </button>
                         <button
                           type="button"
+                          data-ocid={`cart.delete_button.${idx + 1}`}
                           onClick={() => removeItem(item.id)}
-                          className="flex items-center gap-1 text-xs bg-muted hover:bg-destructive hover:text-destructive-foreground px-3 py-1.5 rounded-full transition-colors hindi-text"
-                          aria-label="\u0939\u091f\u093e\u090f\u0902"
+                          className="flex items-center gap-1 text-xs bg-muted hover:bg-destructive hover:text-destructive-foreground px-3 py-1.5 rounded-full transition-colors"
+                          aria-label="Remove"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
-                          \u0939\u091f\u093e\u090f\u0902
+                          Remove
                         </button>
                       </div>
                     </motion.li>
@@ -739,7 +671,7 @@ export default function App() {
 
             {cart.length > 0 && (
               <div className="text-right text-2xl font-bold text-primary font-display border-t border-border pt-3 mb-6">
-                \u0915\u0941\u0932: \u20b9{cartTotal}
+                Total: ₹{cartTotal}
               </div>
             )}
 
@@ -748,39 +680,36 @@ export default function App() {
               className="rounded-2xl p-5 mb-6"
               style={{ background: "oklch(0.96 0.03 72)" }}
             >
-              <h3 className="font-semibold text-foreground hindi-text flex items-center gap-2 mb-4">
+              <h3 className="font-semibold text-foreground flex items-center gap-2 mb-4">
                 <Package className="w-5 h-5 text-primary" />
-                \u0921\u093f\u0932\u0940\u0935\u0930\u0940
-                \u091c\u093e\u0928\u0915\u093e\u0930\u0940
-                (\u0915\u0947\u0935\u0932 5 \u0915\u093f\u092e\u0940
-                \u0926\u093e\u092f\u0930\u0947 \u092e\u0947\u0902)
+                Delivery Information{" "}
+                <span className="text-sm font-normal text-muted-foreground">
+                  (within 5 km only)
+                </span>
               </h3>
               <div className="space-y-3">
                 <div>
                   <label
                     htmlFor={nameId}
-                    className="block text-sm font-semibold hindi-text mb-1"
+                    className="block text-sm font-semibold mb-1"
                   >
-                    \u0906\u092a\u0915\u093e \u0928\u093e\u092e{" "}
-                    <span className="text-red-500">*</span>
+                    Your Name <span className="text-red-500">*</span>
                   </label>
                   <Input
                     id={nameId}
                     data-ocid="order.input"
                     value={customerName}
                     onChange={(e) => setCustomerName(e.target.value)}
-                    placeholder="\u091c\u0948\u0938\u0947: \u0930\u093e\u0939\u0941\u0932 \u0915\u0941\u092e\u093e\u0930"
+                    placeholder="जैसे: राहुल कुमार"
                     className="hindi-text"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor={addressId}
-                    className="block text-sm font-semibold hindi-text mb-1"
+                    className="block text-sm font-semibold mb-1"
                   >
-                    \u092a\u0942\u0930\u093e \u092a\u0924\u093e
-                    (\u0932\u0948\u0902\u0921\u092e\u093e\u0930\u094d\u0915
-                    \u0938\u0939\u093f\u0924){" "}
+                    Full Address (with landmark){" "}
                     <span className="text-red-500">*</span>
                   </label>
                   <Textarea
@@ -788,7 +717,7 @@ export default function App() {
                     data-ocid="order.textarea"
                     value={customerAddress}
                     onChange={(e) => setCustomerAddress(e.target.value)}
-                    placeholder="\u092e\u0915\u093e\u0928 \u0928\u0902\u092c\u0930, \u0917\u0932\u0940, \u0915\u094d\u0937\u0947\u0924\u094d\u0930, \u0928\u093f\u0915\u091f\u0924\u092e \u0938\u094d\u0925\u0932"
+                    placeholder="मकान नंबर, गली, क्षेत्र, निकटतम स्थल"
                     rows={2}
                     className="hindi-text"
                   />
@@ -796,12 +725,12 @@ export default function App() {
                 <div>
                   <label
                     htmlFor={phoneId}
-                    className="block text-sm font-semibold hindi-text mb-1"
+                    className="block text-sm font-semibold mb-1"
                   >
-                    \u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930
-                    (\u0935\u094d\u0939\u093e\u091f\u094d\u0938\u0910\u092a
-                    \u092a\u0930 \u092d\u0947\u091c\u093e
-                    \u091c\u093e\u090f\u0917\u093e)
+                    Phone Number{" "}
+                    <span className="text-muted-foreground text-xs font-normal">
+                      (will be sent on WhatsApp)
+                    </span>
                   </label>
                   <Input
                     id={phoneId}
@@ -809,7 +738,7 @@ export default function App() {
                     type="tel"
                     value={customerPhone}
                     onChange={(e) => setCustomerPhone(e.target.value)}
-                    placeholder="\u0909\u0926\u093e. 9876543210"
+                    placeholder="उदा. 9876543210"
                   />
                 </div>
               </div>
@@ -821,19 +750,10 @@ export default function App() {
                   borderLeft: "4px solid oklch(0.52 0.16 240)",
                 }}
               >
-                <span className="text-base">\u2139\ufe0f</span>
+                <span className="text-base">ℹ️</span>
                 <span>
-                  \u0939\u094b\u092e \u0921\u093f\u0932\u0940\u0935\u0930\u0940
-                  \u0915\u0947\u0935\u0932 5 \u0915\u093f\u092e\u0940
-                  \u0915\u0947 \u0905\u0902\u0926\u0930 (\u0905\u0921\u093e
-                  \u092e\u094b\u0921\u093c, \u0928\u0948\u0928\u0940
-                  \u0906\u0938\u092a\u093e\u0938)
-                  \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964
-                  \u092a\u0941\u0937\u094d\u091f\u093f \u0915\u0947
-                  \u0932\u093f\u090f \u0939\u092e \u0906\u092a\u0915\u094b
-                  \u0915\u0949\u0932 \u0915\u0930\u0947\u0902\u0917\u0947\u0964
-                  \u0928\u094d\u092f\u0942\u0928\u0924\u092e
-                  \u0911\u0930\u094d\u0921\u0930 \u20b950\u0964
+                  होम डिलीवरी केवल 5 किमी के अंदर (अडा मोड़, नैनी आसपास) उपलब्ध है।
+                  पुष्टि के लिए हम आपको कॉल करेंगे। न्यूनतम ऑर्डर ₹50।
                 </span>
               </div>
             </div>
@@ -843,59 +763,48 @@ export default function App() {
               <a
                 href={`tel:${PHONE_TEL}`}
                 data-ocid="order.secondary_button"
-                className="flex items-center gap-2 bg-blue-500 text-white font-semibold px-5 py-3 rounded-full text-sm hover:bg-blue-600 transition-colors hindi-text"
+                className="flex items-center gap-2 bg-blue-500 text-white font-semibold px-5 py-3 rounded-full text-sm hover:bg-blue-600 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                \u0915\u0949\u0932 \u0915\u0930\u0947\u0902: 9695-613-005
+                Call Us: 9695-613-005
               </a>
               <button
                 type="button"
                 data-ocid="order.primary_button"
                 onClick={orderOnWhatsApp}
-                className="flex items-center gap-2 text-white font-semibold px-5 py-3 rounded-full text-sm transition-colors hindi-text"
+                className="flex items-center gap-2 text-white font-semibold px-5 py-3 rounded-full text-sm transition-colors"
                 style={{ background: "#25D366" }}
               >
                 <MessageCircle className="w-4 h-4" />
-                WhatsApp \u092a\u0930 \u0911\u0930\u094d\u0921\u0930
-                \u092d\u0947\u091c\u0947\u0902
+                Order on WhatsApp
               </button>
               <button
                 type="button"
                 data-ocid="order.delete_button"
                 onClick={clearCart}
-                className="flex items-center gap-2 border border-border text-foreground font-semibold px-5 py-3 rounded-full text-sm hover:bg-muted transition-colors hindi-text"
+                className="flex items-center gap-2 border border-border text-foreground font-semibold px-5 py-3 rounded-full text-sm hover:bg-muted transition-colors"
               >
                 <Trash2 className="w-4 h-4" />
-                \u0915\u093e\u0930\u094d\u091f \u0916\u093e\u0932\u0940
-                \u0915\u0930\u0947\u0902
+                Clear Cart
               </button>
             </div>
 
             <p className="text-center mt-4 text-xs text-muted-foreground hindi-text">
-              \u26a0\ufe0f \u0915\u0940\u092e\u0924\u0947\u0902
-              \u092c\u093e\u091c\u093e\u0930 \u092d\u093e\u0935 \u0915\u0947
-              \u0905\u0928\u0941\u0938\u093e\u0930 \u092c\u0926\u0932
-              \u0938\u0915\u0924\u0940 \u0939\u0948\u0902\u0964
-              \u0915\u0943\u092a\u092f\u093e \u0911\u0930\u094d\u0921\u0930
-              \u0938\u0947 \u092a\u0939\u0932\u0947
-              \u0938\u094d\u091f\u0949\u0915 \u0915\u0940
-              \u092a\u0941\u0937\u094d\u091f\u093f \u0915\u0947
-              \u0932\u093f\u090f \u0915\u0949\u0932
-              \u0915\u0930\u0947\u0902\u0964
+              ⚠️ कीमतें बाजार भाव के अनुसार बदल सकती हैं। कृपया ऑर्डर से पहले स्टॉक की पुष्टि
+              के लिए कॉल करें।
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* \u2500\u2500\u2500 LOCATION \u2500\u2500\u2500 */}
+      {/* ─── LOCATION ─── */}
       <section
         className="py-12 px-4"
         style={{ background: "oklch(0.97 0.018 80)" }}
       >
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-primary hindi-text text-center mb-3">
-            \ud83d\udccd \u0939\u092e\u093e\u0930\u093e
-            \u0938\u094d\u0925\u093e\u0928
+          <h2 className="font-display text-3xl font-bold text-primary text-center mb-3">
+            📍 Our Location
           </h2>
           <div className="w-20 h-1.5 bg-secondary rounded-full mx-auto mb-6" />
           <div
@@ -906,25 +815,17 @@ export default function App() {
             }}
           >
             <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow font-semibold hindi-text">
-              \u0905\u0921\u093e \u092e\u094b\u0921\u093c,
-              \u0928\u0948\u0928\u0940,
-              \u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c
+              अडा मोड़, नैनी, प्रयागराज
             </div>
           </div>
           <div className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground hindi-text">
             <MapPin className="w-4 h-4 text-primary" />
-            <span>
-              \u0905\u0921\u093e \u092e\u094b\u0921\u093c,
-              \u0928\u0948\u0928\u0940,
-              \u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c - 211008 (5
-              \u0915\u093f\u092e\u0940 \u0926\u093e\u092f\u0930\u0947
-              \u092e\u0947\u0902 \u0921\u093f\u0932\u0940\u0935\u0930\u0940)
-            </span>
+            <span>अडा मोड़, नैनी, प्रयागराज - 211008 (5 किमी दायरे में डिलीवरी)</span>
           </div>
         </div>
       </section>
 
-      {/* \u2500\u2500\u2500 FOOTER \u2500\u2500\u2500 */}
+      {/* ─── FOOTER ─── */}
       <footer
         className="text-white text-center py-8 px-4"
         style={{ background: "oklch(0.28 0.06 145)" }}
@@ -932,36 +833,26 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <div className="font-display text-xl font-bold hindi-text mb-2 flex items-center justify-center gap-2">
             <Utensils className="w-5 h-5 text-secondary" />
-            \u0935\u093f\u092a\u093f\u0928 \u0936\u0941\u0915\u094d\u0932
-            \u092d\u094b\u091c\u0928\u093e\u0932\u092f
+            विपिन शुक्ल भोजनालय
           </div>
-          <p className="text-white/80 text-sm hindi-text mb-1">
-            \u00a9 {new Date().getFullYear()} \u0935\u093f\u092a\u093f\u0928
-            \u0936\u0941\u0915\u094d\u0932
-            \u092d\u094b\u091c\u0928\u093e\u0932\u092f\u0964
-            \u0938\u0930\u094d\u0935\u093e\u0927\u093f\u0915\u093e\u0930
-            \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924\u0964
+          <p className="text-white/80 text-sm mb-1">
+            © {new Date().getFullYear()} विपिन शुक्ल भोजनालय. All Rights Reserved.
           </p>
-          <p className="text-white/80 text-sm hindi-text mb-1">
-            \ud83d\udcde \u0939\u0947\u0932\u094d\u092a\u0932\u093e\u0907\u0928:{" "}
+          <p className="text-white/80 text-sm mb-1">
+            📞 Helpline:{" "}
             <a
               href={`tel:${PHONE_TEL}`}
               className="text-secondary hover:underline"
             >
               {PHONE_DISPLAY}
             </a>
-            {" | "}\ud83d\udccd \u0905\u0921\u093e \u092e\u094b\u0921\u093c,
-            \u0928\u0948\u0928\u0940,
-            \u092a\u094d\u0930\u092f\u093e\u0917\u0930\u093e\u091c
+            {" | "}📍 <span className="hindi-text">अडा मोड़, नैनी, प्रयागराज</span>
           </p>
-          <p className="text-white/80 text-sm hindi-text mb-3">
-            \ud83d\udcac \u0935\u094d\u0939\u093e\u091f\u094d\u0938\u0910\u092a:
-            9695-613-005 | \ud83d\udd52 \u0938\u0941\u092c\u0939 8:00
-            \u092c\u091c\u0947 \u0938\u0947 \u0930\u093e\u0924 10:00
-            \u092c\u091c\u0947 \u0924\u0915
+          <p className="text-white/80 text-sm mb-3">
+            💬 WhatsApp: 9695-613-005 | 🕒 Open: 8:00 AM – 10:00 PM
           </p>
           <p className="text-white/50 text-xs">
-            Built with \u2764\ufe0f using{" "}
+            Built with ❤️ using{" "}
             <a
               href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
               target="_blank"
