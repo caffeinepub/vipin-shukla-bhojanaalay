@@ -13,9 +13,17 @@ export const MenuItem = IDL.Record({
   'description' : IDL.Text,
   'price' : IDL.Nat,
 });
+export const Review = IDL.Record({
+  'starsCount' : IDL.Nat,
+  'customerName' : IDL.Text,
+  'productName' : IDL.Text,
+  'message' : IDL.Text,
+  'timestamp' : IDL.Int,
+});
 
 export const idlService = IDL.Service({
   'addMenuItem' : IDL.Func([IDL.Text, IDL.Text, IDL.Nat], [], []),
+  'addReview' : IDL.Func([IDL.Text, IDL.Text, IDL.Nat, IDL.Text], [], []),
   'getMenu' : IDL.Func([], [IDL.Vec(MenuItem)], ['query']),
   'getRestaurantInfo' : IDL.Func(
       [],
@@ -28,6 +36,7 @@ export const idlService = IDL.Service({
       ],
       ['query'],
     ),
+  'getReviews' : IDL.Func([], [IDL.Vec(Review)], ['query']),
   'updatePhoneNumber' : IDL.Func([IDL.Text], [], []),
   'updateUPIId' : IDL.Func([IDL.Text], [], []),
 });
@@ -40,9 +49,17 @@ export const idlFactory = ({ IDL }) => {
     'description' : IDL.Text,
     'price' : IDL.Nat,
   });
+  const Review = IDL.Record({
+    'starsCount' : IDL.Nat,
+    'customerName' : IDL.Text,
+    'productName' : IDL.Text,
+    'message' : IDL.Text,
+    'timestamp' : IDL.Int,
+  });
   
   return IDL.Service({
     'addMenuItem' : IDL.Func([IDL.Text, IDL.Text, IDL.Nat], [], []),
+    'addReview' : IDL.Func([IDL.Text, IDL.Text, IDL.Nat, IDL.Text], [], []),
     'getMenu' : IDL.Func([], [IDL.Vec(MenuItem)], ['query']),
     'getRestaurantInfo' : IDL.Func(
         [],
@@ -55,6 +72,7 @@ export const idlFactory = ({ IDL }) => {
         ],
         ['query'],
       ),
+    'getReviews' : IDL.Func([], [IDL.Vec(Review)], ['query']),
     'updatePhoneNumber' : IDL.Func([IDL.Text], [], []),
     'updateUPIId' : IDL.Func([IDL.Text], [], []),
   });

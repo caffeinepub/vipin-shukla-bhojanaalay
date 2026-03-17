@@ -1,28 +1,31 @@
-# Kallu Sweets & Namkeen Website
+# Kallu Sweets & Namkeen Shop
 
 ## Current State
-New project -- no existing code.
+- Homepage with carousel, welcome card, menu (4 dropdown categories), reviews (static), about, contact
+- Cart with WhatsApp/Call checkout
+- Delivery banner at top
+- Reviews section shows 4 hardcoded testimonials only — customers cannot submit reviews
 
 ## Requested Changes (Diff)
 
 ### Add
-- Full website for कल्लू स्वीट्स एंड नमकीन based on user-provided HTML
-- Sticky header with shop name and cart button
-- Delivery banner (5km radius notice)
-- Product grid: 6 items (काजू कतली, गुलाब जामुन, मोतीचूर लड्डू, रसमलाई, बीकानेरी भुजिया, नवरत्न मिक्सचर)
-- Cart modal with item management and total
-- Contact modal with Call and WhatsApp order options
-- WhatsApp order message auto-generation
+- Prominent "Important Note" box on homepage, placed ABOVE the menu section (i.e., above the Breakfast category), with two Hindi/English points:
+  1. Min ₹100 ka order compulsory hai home delivery ke liye
+  2. Home delivery only 5 km ke andar available hai
+- Customer review submission form in the Reviews section: fields — Product Name (text), Customer Name, Star Rating (1–5), Review Text, Submit button
+- Backend API to save and retrieve customer-submitted reviews
+- Display all submitted reviews alongside existing static reviews
 
 ### Modify
-- N/A
+- Reviews section: make it dynamic — load reviews from backend + show submission form below existing reviews
 
 ### Remove
-- N/A
+- Nothing removed
 
 ## Implementation Plan
-1. Create React frontend replicating the user's HTML exactly
-2. Cart state management in React
-3. WhatsApp number: 919452492100, Call: +919452492100
-4. All text in Hindi as provided
-5. Emoji icons for product images (as per user code)
+1. Update `src/backend/main.mo` to add `Review` type, `addReview` (public shared), `getReviews` (public query)
+2. Update `App.tsx`:
+   - Add `ImportantNote` component/block above menu section with styled box
+   - Wire `addReview` and `getReviews` from backend
+   - Add review submission form (product, name, rating, text)
+   - Merge static + dynamic reviews in display

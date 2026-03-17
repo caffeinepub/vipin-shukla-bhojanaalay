@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,49 +6,64 @@
 
 @layer base {
   :root {
-    --background: 0.98 0.005 85;
-    --foreground: 0.15 0.01 30;
+    /* Premium Black + Red + Warm palette */
+    --background: 0.97 0.01 80;
+    --foreground: 0.13 0.01 20;
     --card: 1 0 0;
-    --card-foreground: 0.15 0.01 30;
+    --card-foreground: 0.13 0.01 20;
     --popover: 1 0 0;
-    --popover-foreground: 0.15 0.01 30;
-    --primary: 0.45 0.19 25;
-    --primary-foreground: 1 0 0;
-    --secondary: 0.94 0.03 85;
-    --secondary-foreground: 0.15 0.01 30;
-    --muted: 0.95 0.01 85;
-    --muted-foreground: 0.45 0.02 50;
-    --accent: 0.75 0.18 75;
-    --accent-foreground: 0.15 0.01 30;
-    --destructive: 0.45 0.19 25;
-    --destructive-foreground: 1 0 0;
-    --success: 0.35 0.13 145;
-    --success-foreground: 1 0 0;
-    --border: 0.9 0.01 85;
-    --input: 0.9 0.01 85;
-    --ring: 0.45 0.19 25;
-    --radius: 0.75rem;
+    --popover-foreground: 0.13 0.01 20;
+    --primary: 0.42 0.22 25;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.94 0.02 80;
+    --secondary-foreground: 0.13 0.01 20;
+    --muted: 0.94 0.01 80;
+    --muted-foreground: 0.5 0.02 45;
+    --accent: 0.52 0.25 25;
+    --accent-foreground: 0.98 0 0;
+    --destructive: 0.45 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+    --success: 0.38 0.14 145;
+    --success-foreground: 0.98 0 0;
+    --warning: 0.82 0.14 80;
+    --warning-foreground: 0.15 0.02 40;
+    --border: 0.9 0.015 70;
+    --input: 0.88 0.01 70;
+    --ring: 0.52 0.25 25;
+    --radius: 0.625rem;
+  }
 
-    --red: 0.45 0.19 25;
-    --red-dark: 0.35 0.18 25;
-    --green: 0.35 0.13 145;
-    --yellow: 0.75 0.18 75;
-    --orange-light: 0.92 0.08 60;
-    --orange-text: 0.5 0.16 40;
+  html {
+    scroll-padding-top: 110px;
+    scroll-behavior: smooth;
   }
 
   * {
     @apply border-border;
+    box-sizing: border-box;
   }
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e6ddc5' fill-opacity='0.35' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
   }
 
   h1,
   h2,
   h3 {
-    font-family: "Fraunces", serif;
+    font-family: "Playfair Display", serif;
+  }
+
+  p,
+  li,
+  label,
+  input,
+  textarea,
+  button,
+  a {
+    font-size: max(16px, 1rem);
   }
 }

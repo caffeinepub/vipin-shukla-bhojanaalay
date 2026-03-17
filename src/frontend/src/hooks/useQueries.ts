@@ -24,3 +24,15 @@ export function useMenu() {
     enabled: !!actor && !isFetching,
   });
 }
+
+export function useReviews() {
+  const { actor, isFetching } = useActor();
+  return useQuery({
+    queryKey: ["reviews"],
+    queryFn: async () => {
+      if (!actor) return [];
+      return actor.getReviews();
+    },
+    enabled: !!actor && !isFetching,
+  });
+}

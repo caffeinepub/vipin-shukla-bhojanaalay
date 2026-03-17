@@ -94,14 +94,23 @@ export interface MenuItem {
     description: string;
     price: bigint;
 }
+export interface Review {
+    starsCount: bigint;
+    customerName: string;
+    productName: string;
+    message: string;
+    timestamp: bigint;
+}
 export interface backendInterface {
     addMenuItem(name: string, description: string, price: bigint): Promise<void>;
+    addReview(productName: string, customerName: string, starsCount: bigint, message: string): Promise<void>;
     getMenu(): Promise<Array<MenuItem>>;
     getRestaurantInfo(): Promise<{
         name: string;
         upiId: string;
         phoneNumber: string;
     }>;
+    getReviews(): Promise<Array<Review>>;
     updatePhoneNumber(newPhoneNumber: string): Promise<void>;
     updateUPIId(newUPIId: string): Promise<void>;
 }
@@ -118,6 +127,20 @@ export class Backend implements backendInterface {
             }
         } else {
             const result = await this.actor.addMenuItem(arg0, arg1, arg2);
+            return result;
+        }
+    }
+    async addReview(arg0: string, arg1: string, arg2: bigint, arg3: string): Promise<void> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.addReview(arg0, arg1, arg2, arg3);
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.addReview(arg0, arg1, arg2, arg3);
             return result;
         }
     }
@@ -150,6 +173,20 @@ export class Backend implements backendInterface {
             }
         } else {
             const result = await this.actor.getRestaurantInfo();
+            return result;
+        }
+    }
+    async getReviews(): Promise<Array<Review>> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.getReviews();
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.getReviews();
             return result;
         }
     }

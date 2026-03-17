@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Fraunces", "serif"],
-        body: ["Plus Jakarta Sans", "sans-serif"],
+        display: ["Playfair Display", "serif"],
+        body: ["Poppins", "sans-serif"],
       },
       colors: {
         background: "oklch(var(--background))",
@@ -42,14 +42,6 @@ export default {
         border: "oklch(var(--border))",
         input: "oklch(var(--input))",
         ring: "oklch(var(--ring))",
-        shop: {
-          red: "oklch(var(--red))",
-          "red-dark": "oklch(var(--red-dark))",
-          green: "oklch(var(--green))",
-          yellow: "oklch(var(--yellow))",
-          "orange-light": "oklch(var(--orange-light))",
-          "orange-text": "oklch(var(--orange-text))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -57,9 +49,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        card: "0 4px 16px rgba(0,0,0,0.08)",
-        "card-hover": "0 8px 24px rgba(0,0,0,0.14)",
-        modal: "0 20px 60px rgba(0,0,0,0.25)",
+        card: "0 2px 8px rgba(139,69,19,0.08)",
+        "card-hover": "0 8px 24px rgba(139,69,19,0.15)",
+        header: "0 2px 10px rgba(0,0,0,0.06)",
       },
     },
   },

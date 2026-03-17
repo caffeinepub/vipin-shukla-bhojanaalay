@@ -15,13 +15,22 @@ export interface MenuItem {
   'description' : string,
   'price' : bigint,
 }
+export interface Review {
+  'starsCount' : bigint,
+  'customerName' : string,
+  'productName' : string,
+  'message' : string,
+  'timestamp' : bigint,
+}
 export interface _SERVICE {
   'addMenuItem' : ActorMethod<[string, string, bigint], undefined>,
+  'addReview' : ActorMethod<[string, string, bigint, string], undefined>,
   'getMenu' : ActorMethod<[], Array<MenuItem>>,
   'getRestaurantInfo' : ActorMethod<
     [],
     { 'name' : string, 'upiId' : string, 'phoneNumber' : string }
   >,
+  'getReviews' : ActorMethod<[], Array<Review>>,
   'updatePhoneNumber' : ActorMethod<[string], undefined>,
   'updateUPIId' : ActorMethod<[string], undefined>,
 }
