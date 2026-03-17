@@ -48,12 +48,12 @@ const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 2,
-    name: "देसी घी जलेबी",
-    price: 130,
-    stock: 15,
+    name: "दमदार गरमागरम डोसा",
+    price: 80,
+    stock: 20,
     image:
-      "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=400&h=300&q=80",
-    desc: "केसरिया, कुरकुरी जलेबी - देसी घी में तली (250 ग्राम)।",
+      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&h=300&q=80",
+    desc: "क्रिस्पी, गरमागरम डोसा - नारियल चटनी और सांभर के साथ।",
   },
   {
     id: 3,
@@ -432,7 +432,7 @@ export default function App() {
             स्वाद जो दीवाना बना दे!
           </h1>
           <p className="text-white/90 text-lg md:text-xl hindi-text mb-2">
-            गरमागरम समोसा • रसभरी जलेबी • पारंपरिक थाली • छोले भटूरे
+            गरमागरम समोसा • दमदार डोसा • पारंपरिक थाली • छोले भटूरे
           </p>
           <p className="text-white/80 text-base hindi-text mb-8">
             🥘 ताज़ा और शुद्ध सामग्री से तैयार
